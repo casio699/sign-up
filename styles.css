@@ -349,10 +349,15 @@
   }
 
   /*======================================================================================*/
-
+html{
+  font-family: "logo-font";
+  color: aliceblue;
+}
   body{
     display: flex;
     flex-wrap: nowrap;
+    background-color: burlywood;
+   
   }
   @font-face {
     font-family: "logo-font";
@@ -369,10 +374,16 @@
 
   }
   .container-right{
-    position: absolute;
-    left: 22vw;
-    width: 70%;
-    height: 90%;
+    position: sticky;
+    left: 21vw;
+    padding-left: 2%;
+    /* width: 70%; */
+    /* height: 90%; */
+    background-image: url(images/Red-Death-Flower.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80vw;
+    /* height: 100vw;*/
   }
   img{
   max-width: 100%;
@@ -389,6 +400,8 @@
     width: 100%;
   }
   .logo-placeholder{
+    background-color: rgb(0 0 0 / 50%);
+    background
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -400,12 +413,20 @@
   }
   .logo-text{
     font-family: "logo-font";
-    color: aliceblue;
+    color: ivory;
     font-size: 7vw;
     font-weight: bolder;
     margin: 0;
   }
-  .logo-svg{
-    filter: invert(18%) sepia(82%) saturate(7499%) hue-rotate(358deg) brightness(98%) contrast(117%);
+h1, .content{
+  font-family: "logo-font";
+  
 
-  }
+}
+.content h1{
+  font-size: 7vw;
+  margin: 5vw;
+}
+h2, h3, h1{
+  margin: auto;
+}
